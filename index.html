@@ -9,7 +9,9 @@
   <h1>Enter Your ID</h1>
   <form action="mailto:ahmed.andreas.maroof@gmail.com" method="post" enctype="text/plain">
     <label for="user-id">Your ID:</label>
-    <input type="text" id="user-id" name="user-id" required>
+    <input type="text" id="user-id" name="user-id" required
+           pattern="[A-Fa-f0-9]{16}"
+           title="Enter a 16-character hexadecimal ID (0-9, A-F)">
     <br><br>
     <input type="submit" value="Send">
   </form>
